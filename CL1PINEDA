@@ -1,0 +1,20 @@
+SET GLOBAL time_zone = '+8:00';
+create database CL1PINEDA;
+use CL1PINEDA;
+Create Table citas(
+id_cita int auto_increment,
+num_cita varchar(75),
+fecha_cita datetime,
+nom_paciente_cita varchar(255),
+id_doctor int,
+PRIMARY KEY (`id_cita`)
+);
+create Table doctor(
+id_doctor int auto_increment,
+nom_doctor varchar(255),
+especialidad_doctor varchar(255),
+PRIMARY KEY (`id_doctor`),
+FOREIGN KEY (id_doctor) REFERENCES citas(id_cita)
+);
+select * from citas;
+select * from doctor;
