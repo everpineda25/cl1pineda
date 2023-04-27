@@ -13,7 +13,7 @@ public class Main {
         while (!salir) {
  
             System.out.println("Ingresar Citas");
-            System.out.println("MOstrar Citas del Doctor");
+            System.out.println("Mostrar Citas del Doctor");
             System.out.println("Salir");
  
             try {
@@ -32,7 +32,7 @@ public class Main {
                         salir = true;
                         break;
                     default:
-                        System.out.println("Solo números entre 1 y 3");
+                        System.out.println("Opciones entre 1 y 3");
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Elija una Opcion");
